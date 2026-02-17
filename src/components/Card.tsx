@@ -7,7 +7,7 @@ export function Card(props: { children: React.ReactNode; title?: string }) {
   return (
     <MuiCard>
       {props.title && <CardHeader title={props.title} />}
-      <CardContent>{props.children}</CardContent>
+      <CardContent style={{ position: "relative" }}>{props.children}</CardContent>
     </MuiCard>
   );
 }
